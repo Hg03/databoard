@@ -1,8 +1,5 @@
 import reflex as rx
-
-
-@rx.page()
-def index():
-    return rx.center(rx.heading("Hello Reflex! 👋"))
+from .pages.index import index # type: ignore
 
 app = rx.App()
+app.add_page(index, route="/")
