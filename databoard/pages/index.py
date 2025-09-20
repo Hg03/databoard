@@ -7,11 +7,14 @@ from ..components.contact import contact # type: ignore
 @rx.page(route="/", title="DataBoard")
 def index() -> rx.Component:
     return rx.vstack(
-        navbar(),
+        navbar("main"),
         rx.vstack(
             header(),
             gallery(),
-            contact()
+            contact(),
+            align_items="center",  # Only center the content, not navbar
         ),
+        width="100%",  # Ensure full width
+        spacing="0",   # Remove spacing between navbar and content
         align_items="center",
     )

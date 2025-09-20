@@ -5,5 +5,6 @@ def contact() -> rx.Component:
         rx.vstack(
             rx.text("Contact Us", size="6", weight="bold"),
         ),
-        align_items="center"
+        align_items="center",
+        id="contact-section"
     )

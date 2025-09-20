@@ -3,10 +3,22 @@ import reflex as rx
 
 def navbar_link(text: str, url: str) -> rx.Component:
     return rx.link(
-        rx.text(text, size="4", weight="medium", href=url)
+        rx.text(text, size="4", weight="medium"),
+        href=url
     )
 
-def navbar() -> rx.Component:
+def navbar(page_type: str = "main") -> rx.Component:
+    # Define links based on page type
+    if page_type == "main":
+        home_link = '#header-section'
+        gallery_link = '#gallery-section' 
+        contact_link = '#contact-section'
+    else:
+        # For other pages, redirect to main page with sections
+        home_link = '/#header-section'
+        gallery_link = '/#gallery-section'
+        contact_link = '/#contact-section'
+    
     return rx.box(
         rx.desktop_only(
             rx.hstack(
@@ -17,9 +29,10 @@ def navbar() -> rx.Component:
                     align_items="center"
                 ),
                 rx.hstack(
-                    navbar_link("Home", '/components/header/header'),
-                    navbar_link("Gallery", '/components/gallery/gallery'),
-                    navbar_link("Try", '/pages/trial/trial'),
+                    navbar_link("Home", home_link),
+                    navbar_link("Gallery", gallery_link),
+                    navbar_link("Contact", contact_link),
+                    navbar_link("Try", '/trial'),
                     justify="end",
                     spacing="5"
                 ),
@@ -40,9 +53,18 @@ def navbar() -> rx.Component:
                             rx.icon("menu", size=30),
                         ),
                         rx.menu.content(
-                            rx.menu.item("Home"),
-                            rx.menu.item("Gallery"),
-                            rx.menu.item("Try")
+                            rx.menu.item(
+                                rx.link("Home", href=home_link)
+                            ),
+                            rx.menu.item(
+                                rx.link("Gallery", href=gallery_link)
+                            ),
+                            rx.menu.item(
+                                rx.link("Contact", href=contact_link)
+                            ),
+                            rx.menu.item(
+                                rx.link("Try", href="/trial")
+                            )
                         ),
                         justify="end"
                     ),

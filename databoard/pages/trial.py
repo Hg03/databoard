@@ -3,11 +3,13 @@ from ..components.navbar import navbar # type: ignore
 
 @rx.page(route="/trial", title="Trial Page")
 def trial() -> rx.Component:
-    return rx.container(
+    return rx.vstack(
+        navbar("trial"),
         rx.vstack(
-            navbar(),
             rx.text("This is a trial page!"),
-            spacing="9",
-            width="100%"
-        )
+            align_items="center",  # Only center the content, not navbar
+        ),
+        width="100%",  # Ensure full width
+        spacing="0",   # Remove spacing between navbar and content
+        align_items="center",
     )
