@@ -92,24 +92,24 @@ def header() -> rx.Component:
                             ),
                             href="/trial"
                         ),
-                        rx.button(
-                            rx.hstack(
-                                rx.icon("book-open", size=18),
-                                rx.text("Learn More"),
-                                spacing="2"
-                            ),
-                            size="3",
-                            variant="outline",
-                            style={
-                                "animation": "fadeInUp 1s ease-out 0.6s both",
-                                "cursor": "pointer",
-                                "transform": "translateY(0)",
-                                "_hover": {
-                                    "transform": "translateY(-2px)",
-                                    "border_color": "#8B5CF6",
-                                }
-                            }
-                        ),
+                        # rx.button(
+                        #     rx.hstack(
+                        #         rx.icon("book-open", size=18),
+                        #         rx.text("Learn More"),
+                        #         spacing="2"
+                        #     ),
+                        #     size="3",
+                        #     variant="outline",
+                        #     style={
+                        #         "animation": "fadeInUp 1s ease-out 0.6s both",
+                        #         "cursor": "pointer",
+                        #         "transform": "translateY(0)",
+                        #         "_hover": {
+                        #             "transform": "translateY(-2px)",
+                        #             "border_color": "#8B5CF6",
+                        #         }
+                        #     }
+                        # ),
                         spacing="4",
                         style={
                             "margin_top": "2rem",

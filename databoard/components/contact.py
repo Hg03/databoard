@@ -388,79 +388,79 @@ def contact() -> rx.Component:
                 ),
                 
                 # Additional contact methods
-                rx.vstack(
-                    rx.text(
-                        "Prefer other ways to connect?",
-                        size="3",
-                        color="#6b7280",
-                        text_align="center",
-                    ),
-                    rx.hstack(
-                        rx.link(
-                            rx.button(
-                                rx.hstack(
-                                    rx.icon("message-circle", size=16),
-                                    rx.text("Live Chat"),
-                                    spacing="2"
-                                ),
-                                variant="outline",
-                                size="2",
-                                color="#3B82F6",
-                                border_color="#3B82F6",
-                                style={
-                                    "_hover": {
-                                        "background": "rgba(59, 130, 246, 0.1)",
-                                    }
-                                }
-                            ),
-                            href="#"
-                        ),
-                        rx.link(
-                            rx.button(
-                                rx.hstack(
-                                    rx.icon("book", size=16),
-                                    rx.text("Documentation"),
-                                    spacing="2"
-                                ),
-                                variant="outline",
-                                size="2",
-                                color="#8B5CF6",
-                                border_color="#8B5CF6",
-                                style={
-                                    "_hover": {
-                                        "background": "rgba(139, 92, 246, 0.1)",
-                                    }
-                                }
-                            ),
-                            href="#"
-                        ),
-                        rx.link(
-                            rx.button(
-                                rx.hstack(
-                                    rx.icon("circle-help", size=16),
-                                    rx.text("FAQ"),
-                                    spacing="2"
-                                ),
-                                variant="outline",
-                                size="2",
-                                color="#EC4899",
-                                border_color="#EC4899",
-                                style={
-                                    "_hover": {
-                                        "background": "rgba(236, 72, 153, 0.1)",
-                                    }
-                                }
-                            ),
-                            href="#"
-                        ),
-                        spacing="4",
-                        wrap="wrap",
-                        justify="center",
-                    ),
-                    spacing="4",
-                    align_items="center",
-                    padding="2rem",
-                ),
+                # rx.vstack(
+                #     rx.text(
+                #         "Prefer other ways to connect?",
+                #         size="3",
+                #         color="#6b7280",
+                #         text_align="center",
+                #     ),
+                #     rx.hstack(
+                #         rx.link(
+                #             rx.button(
+                #                 rx.hstack(
+                #                     rx.icon("message-circle", size=16),
+                #                     rx.text("Live Chat"),
+                #                     spacing="2"
+                #                 ),
+                #                 variant="outline",
+                #                 size="2",
+                #                 color="#3B82F6",
+                #                 border_color="#3B82F6",
+                #                 style={
+                #                     "_hover": {
+                #                         "background": "rgba(59, 130, 246, 0.1)",
+                #                     }
+                #                 }
+                #             ),
+                #             href="#"
+                #         ),
+                        # rx.link(
+                        #     rx.button(
+                        #         rx.hstack(
+                        #             rx.icon("book", size=16),
+                        #             rx.text("Documentation"),
+                        #             spacing="2"
+                        #         ),
+                        #         variant="outline",
+                        #         size="2",
+                        #         color="#8B5CF6",
+                        #         border_color="#8B5CF6",
+                        #         style={
+                        #             "_hover": {
+                        #                 "background": "rgba(139, 92, 246, 0.1)",
+                        #             }
+                        #         }
+                        #     ),
+                        #     href="#"
+                        # ),
+                    #     rx.link(
+                    #         rx.button(
+                    #             rx.hstack(
+                    #                 rx.icon("circle-help", size=16),
+                    #                 rx.text("FAQ"),
+                    #                 spacing="2"
+                    #             ),
+                    #             variant="outline",
+                    #             size="2",
+                    #             color="#EC4899",
+                    #             border_color="#EC4899",
+                    #             style={
+                    #                 "_hover": {
+                    #                     "background": "rgba(236, 72, 153, 0.1)",
+                    #                 }
+                    #             }
+                    #         ),
+                    #         href="#"
+                    #     ),
+                    #     spacing="4",
+                    #     wrap="wrap",
+                    #     justify="center",
+                    # ),
+                #     spacing="4",
+                #     align_items="center",
+                #     padding="2rem",
+                # ),
                 
                 spacing="0",
                 width="100%",

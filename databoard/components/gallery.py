@@ -307,47 +307,47 @@ def gallery() -> rx.Component:
                 ),
                 
                 # Action buttons
-                rx.hstack(
-                    rx.button(
-                        rx.hstack(
-                            rx.icon("eye", size=18),
-                            rx.text("View All"),
-                            spacing="2"
-                        ),
-                        size="3",
-                        variant="solid",
-                        style={
-                            "background": "linear-gradient(45deg, #3B82F6, #8B5CF6)",
-                            "cursor": "pointer",
-                            "transform": "translateY(0)",
-                            "_hover": {
-                                "transform": "translateY(-2px)",
-                                "box_shadow": "0 10px 25px rgba(59, 130, 246, 0.3)",
-                            }
-                        }
-                    ),
-                    rx.button(
-                        rx.hstack(
-                            rx.icon("download", size=18),
-                            rx.text("Download Examples"),
-                            spacing="2"
-                        ),
-                        size="3",
-                        variant="outline",
-                        color="#8B5CF6",
-                        border_color="#8B5CF6",
-                        style={
-                            "cursor": "pointer",
-                            "transform": "translateY(0)",
-                            "_hover": {
-                                "transform": "translateY(-2px)",
-                                "background": "rgba(139, 92, 246, 0.1)",
-                            }
-                        }
-                    ),
-                    spacing="4",
-                    margin_bottom="2rem",
-                ),
+                # rx.hstack(
+                #     rx.button(
+                #         rx.hstack(
+                #             rx.icon("eye", size=18),
+                #             rx.text("View All"),
+                #             spacing="2"
+                #         ),
+                #         size="3",
+                #         variant="solid",
+                #         style={
+                #             "background": "linear-gradient(45deg, #3B82F6, #8B5CF6)",
+                #             "cursor": "pointer",
+                #             "transform": "translateY(0)",
+                #             "_hover": {
+                #                 "transform": "translateY(-2px)",
+                #                 "box_shadow": "0 10px 25px rgba(59, 130, 246, 0.3)",
+                #             }
+                #         }
+                #     ),
+                #     rx.button(
+                #         rx.hstack(
+                #             rx.icon("download", size=18),
+                #             rx.text("Download Examples"),
+                #             spacing="2"
+                #         ),
+                #         size="3",
+                #         variant="outline",
+                #         color="#8B5CF6",
+                #         border_color="#8B5CF6",
+                #         style={
+                #             "cursor": "pointer",
+                #             "transform": "translateY(0)",
+                #             "_hover": {
+                #                 "transform": "translateY(-2px)",
+                #                 "background": "rgba(139, 92, 246, 0.1)",
+                #             }
+                #         }
+                #     ),
+                #     spacing="4",
+                #     margin_bottom="2rem",
+                # ),
                 
                 spacing="0",
                 width="100%",
